@@ -466,83 +466,11 @@
 			<span class="plus nbl">+</span>
 			<span class="sublogo nli">Ремонт и отделка жилых и офисных помещений</span>
 			</div> 
-			<a href="http://24komfort.ru" id="24komfort">Ремонт квартир в Красноярске</a>
-			<a href="http://artofbiz.ru" target="_blank" id="artofbiz"><img src="img/artofbiz.png" alt=""></a>
+			<a href="" target="_blank" id="artofbiz"><img src="img/artofbiz.png" alt=""></a>
 			
 		</div>
 	</footer>
- 	<script>
- 	    $(document).ready(function () {
- 		setInterval(function(){
-	    var future = new Date("feb 22 2015 21:15:00 GMT+0200");
-	    var now = new Date();
-	    var difference = Math.floor((future.getTime() - now.getTime()) / 1000);
-	    
-	    var seconds = fixIntegers(difference % 60);
-	    difference = Math.floor(difference / 60);
-	    
-	    var minutes = fixIntegers(difference % 60);
-	    difference = Math.floor(difference / 60);
-	    
-	    var hours = fixIntegers(difference % 24);
-	    difference = Math.floor(difference / 24);
-	    
-	    var days = difference;
-	    
-	    $("#seconds").text(seconds);
-	    $("#minutes").text(minutes);
-	    $("#hours").text(hours);
-	    $("#days").text(days);
-    
-	    $("#seconds1").text(seconds);
-	    $("#minutes1").text(minutes);
-	    $("#hours1").text(hours);
-	    $("#days1").text(days);  
-	    $("#seconds111").text(seconds);
-	    $("#minutes111").text(minutes);
-	    $("#hours111").text(hours);
-	    $("#days111").text(days);  
-    
-	    $("#seconds3").text(seconds);
-	    $("#minutes3").text(minutes);
-	    $("#hours3").text(hours);
-	    $("#days3").text(days);  
-    
-	    $("#seconds2").text(seconds);
-	    $("#minutes2").text(minutes);
-	    $("#hours2").text(hours);
-	    $("#days2").text(days);  
-	}, 1000);
-
-	function fixIntegers(integer)
-	{
-	    if (integer < 0)
-	        integer = 0;
-	    if (integer < 10)
-	        return "0" + integer;
-	    return "" + integer;
-	}
-	$("#load-more").click(function(){
-		$("#lm").show();
-		$("#load-more").hide();
-		return false;
-	});
-	 $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('header').addClass("miniheader");
-            } else {
-                $('header').removeClass("miniheader");
-            }
-        });
-
-
-       
- }); 
-       
- });
- 
- 	</script> 
+ 	   
  	<script>
 		$(document).ready(function(){
 	 	 
