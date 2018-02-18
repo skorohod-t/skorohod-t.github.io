@@ -1,0 +1,568 @@
+ <!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ремонт квартир, офисов, домов, любых помещений в Красноярске</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery.js"></script> 
+	<script src="/js/bootstrap.js"></script> 
+	    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body> 
+<div id="overlay">
+	  	<div id="popup">
+			<div class="close"></div>
+			<div class="form pd " id="newform">
+						<div class="title nbl white ta-c">Оставьте заявку</div>
+						<form action="thanks.php" method="post">
+						<input type="hidden" value="">
+	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required="">
+	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required="">
+	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">
+	 		</form>
+				</div>
+	  	</div>
+	  </div>
+	<header>
+		<div id="header">
+			<div id="logo"><span class="nth">Ремонт</span>
+			<span class="nbl">5</span>
+			<span class="plus nbl">+</span>
+			<span class="sublogo nli">Ремонт и отделка жилых и офисных помещений</span>
+			</div>
+			<div id="button"><a href="#" class="getpopup" data-val="Заказать консультацию" data-btn="Заказать консультацию">Заказать консультацию</a> </div>
+			<div class="phone nth">+7(391)<strong class="nbl">600-00-00</strong></div>
+		</div>
+	</header>
+ 	<div class="wrapper" id="block1"> 
+ 		<div class="container-new">
+		<div class="row maintitle">
+			<div class="  ta-c">
+				<h1 class="nbl">Качественный ремонт помещении<span>в Красноярске и крае <i class="icon-white"></i></span></h1>
+				
+				<h2 class="nli">Без предоплаты. В короткие сроки.</h2>
+				<div class="separator1"><img src="img/sep2.png" alt=""></div>
+			</div>
+	 	<div id="mainform">
+		<div id="timer1">
+			<span class="sublogo nli">Специальное предложение</span>
+			<div class="bigtext nbl">Косметический ремонт</div>
+			<div class="price nli">от 1000 руб/м2</div>
+			<div id="timer" class="nbl black">	
+
+			<b class="nli white">До конца акции осталось:</b>				<b id="days"></b> д <b id="hours"></b> ч <b id="minutes"></b> мин <b id="seconds"></b> сек </div>
+			</div>
+		 
+		<div id="form1">
+			<div class="bigtext nbl">Оставьте заявку</div>
+			<div class="sublogo nli">на бесплатный выезд замерщика и расчет сметы</div>
+	 		
+	 	<form action="thanks.php" method="post">
+	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required="">
+	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required="">
+	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">
+	 		</form>
+	 	</div>
+		</div>
+		</div>
+
+ 	</div> 
+ 	</div> 
+ 	<div class="wrapper" id="block2">
+ 		<div class="container-new">
+ 			<div class="info-item">
+ 				<div class="number nbl">187</div>
+ 				<div class="text">сданных объекта только в Красноярске</div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="number nbl">82</div>
+ 				<div class="text">семьи заехали в квартиры с новым ремонтом </div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="number nbl">56</div>
+ 				<div class="text">капитальных и косметических ремонта в офисах</div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="number nbl">16,3 км</div>
+ 				<div class="text">замененной <br>электропроводки</div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="number nbl">14</div>
+ 				<div class="text">мастеров с российским гражданством</div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="number nbl">32</div>
+ 				<div class="text">часа понадобилось, чтобы сделать самый быстрый ремонт</div>
+ 			</div>
+ 		</div>
+
+ 	</div>
+ 	<div class="wrapper" id="block3">
+ 		<div class="container-new">
+ 			<div class="title nbl black ta-c">Виды ремонтов</div>
+ 			<div class="vid black">
+ 				<div class="hover nbl white">Ремонт жилых помещений</div>
+ 				<div class="image"><img src="img/vid1.jpg" alt=""></div>
+ 				<div class="price nbl">От 1200 руб/м2  <span class="nth">4000 руб </span></div>
+ 				<div class="separator"></div>
+ 				<div class="list">
+ 					<span class="list-title nsb red">Виды выполняемых работ:</span>
+ 					<ul class="black nli">
+ 						<li>замена межкомнатных дверей</li>
+ 						<li>отделка потолка</li>
+ 						<li>отделка стен</li>
+ 						<li>укладка полов</li>
+ 						<li>замена оконных блоков</li>
+ 					</ul>
+ 					<a href="" class="btn btn-large getpopup" data-val="Ремонт жилых помещений" data-btn="Заказать консультацию">Оставьте заявку</a>
+ 				</div>
+ 			</div>
+ 			<div class="vid black">
+ 				<div class="hover nbl white ">Ремонт офисных помещений</div>
+ 				<div class="image"><img src="img/vid2.jpg" alt=""></div>
+ 				<div class="price nbl">От 1149 руб/м2  <span class="nth">4000 руб </span></div>
+ 				<div class="separator"></div>
+ 				<div class="list">
+ 					<span class="list-title nsb red">Виды выполняемых работ:</span>
+ 					<ul class="black nli">
+ 						<li>электромонтажные работы</li>
+ 						<li>отделка потолка</li>
+ 						<li>отделка стен</li>
+ 						<li>укладка полов</li>
+ 						<li>замена оконных блоков</li>
+ 					</ul>
+ 					<a href="" class="btn btn-large getpopup" data-val="Ремонт жилых помещений" data-btn="Заказать консультацию">Оставьте заявку</a>
+ 				</div>
+ 			</div>
+ 			<div class="vid black last">
+ 				<div class="hover nbl white">Ремонт ванны, санузла</div>
+ 				<div class="image"><img src="img/vid3.jpg" alt=""></div>
+ 				<div class="price nbl">От 1180 руб/м2  <span class="nth">4000 руб </span></div>
+ 				<div class="separator"></div>
+ 				<div class="list">
+ 					<span class="list-title nsb red">Виды выполняемых работ:</span>
+ 					<ul class="black nli">
+ 						<li>электромонтажные работы</li>
+ 						<li>отделка потолка</li>
+ 						<li>отделка стен</li>
+ 						<li>укладка кафельной плитки</li>
+ 						<li>сантехнические работы</li>
+ 					</ul>
+ 					<a href="" class="btn btn-large getpopup" data-val="Ремонт жилых помещений" data-btn="Заказать консультацию">Оставьте заявку</a>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="wrapper" id="block4">
+ 		<div class="container-new"> 
+		<div class="row maintitle">
+ 
+	 	<div id="mainform1">
+		<div id="timer2">
+			<span class="sublogo nli">Специальное предложение</span>
+			<div class="bigtext nbl">Поклейка обоев  </div>
+			<div class="price nli">150 руб/м2</div>
+			<b class="nli white pluss">+ вынос строительного мусора - <b class="nbl red ">Бесплатно</b></b>
+			<div id="timer3" class="nbl  ">	
+
+			<b class="nli white">До конца акции осталось:</b><b id="days1"></b> д <b id="hours1"></b> ч <b id="minutes1"></b> мин <b id="seconds1"></b> сек </div>
+			</div>
+		 
+		<div id="form2">
+			<div class="bigtext nbl">Оставьте заявку</div>
+			<div class="sublogo nli">на бесплатный выезд замерщика и расчет сметы</div>
+	 		
+	 	<form action="thanks.php" method="post">
+	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required="">
+	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required="">
+	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">
+	 		</form>
+	 	</div>
+		</div>
+		</div>
+		</div>	
+	</div>
+	<div class="wrapper" id="block5">
+ 		<div class="container-new"> 
+ 			 	<div class="title nbl black ta-c">Почему Вам выгодно с нами работать?</div>
+ 			 <div class="info-item">
+ 			 	<div class="image-ingo"><img src="img/vyg1.jpg" alt=""></div>
+ 				<div class="text"> <span class="nli">Профессиональные строители с </span>
+ 				<span class="nbl">опытом работы от 5 лет</span>
+ 				<b>Если Вы устали от того, что рабочие больше говорят, чем делают – тогда нам по дороге.</b></div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="image-ingo"><img src="img/vyg2.jpg" alt=""></div>
+ 					<div class="text"><span class="nli">У всех наших работников</span> 
+ 					<span class="nbl">российское гражданство</span>
+ 					<b>Специалисты, которые работают в нашей компании - являются гражданами России.</b> </div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="image-ingo"><img src="img/vyg3.jpg" alt=""></div>
+ 					<div class="text"> <span class="nbl">Гарантия</span><span class="nli"> на все работы </span>
+ 					
+ 					<span class="nbl">2 года</span>
+ 					<b>Мы отвечаем за свою работу и поэтому <br> даем Вам гарантии на работы.</b></div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="image-ingo"><img src="img/vyg4.jpg" alt=""></div>
+
+ 				<div class="text"> <span class="nli">Все работы выполняются в</span>
+ 				<span class="nbl">строго оговоренный срок</span>
+ 				<b>За каждый просроченный день готовы сделать Вам скидку в 1000 руб/день</b></div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="image-ingo"><img src="img/vyg5.jpg" alt=""></div>
+ 					<div class="text"> <span class="nli">Работаем</span>
+ 					<span class="nbl">без предоплаты</span>
+ 					<b>Вы нам заплатите только за результаты нашей работы.</b></div>
+ 			</div>
+ 			<div class="info-item">
+ 				<div class="image-ingo"><img src="img/vyg6.jpg" alt=""></div>
+ 					<div class="text"> <span class="nli">Затраты на работу</span>
+ 					<span class="nbl">соответствуют смете</span>
+ 					<b>Никакого отклонения от сметы, при дополнительных затратах Вы будете предупреждены.</b></div>
+ 			</div>
+		</div>	
+	</div>
+	<div class="wrapper" id="block6">
+ 		<div class="container-new"> 
+ 			 	<div class="title nbl black ta-c">Наши работы</div>
+			<div class="doposle">
+				<img src="img/arrow.png" alt="" class="strelka">
+				<div class="wi1600">
+					<img src="img/do.jpg" alt="">
+					<img src="img/posle.jpg" alt="">
+				 
+				<div class="hover">
+					<div class="dp">
+						<div class="do">До</div>
+						<div class="budj">Бюджет работ <span class="red">45 000</span> рублей</div>
+						<div class="posle">После</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="doposle">
+				<img src="img/arrow.png" alt="" class="strelka">
+				<div class="wi1600">
+					<img src="img/do1.jpg" alt="">
+					<img src="img/posle1.jpg" alt="">
+				
+				<div class="hover">
+					<div class="dp">
+						<div class="do">До</div>
+						<div class="budj">Бюджет работ <span class="red">32 000</span> рублей</div>
+						<div class="posle">После</div>
+					</div>
+				</div>
+			</div>
+ 		</div>
+ 		</div>
+ 	</div>
+ 	<div class="wrapper" id="block7">
+ 		<div class="container-new"> 
+ 			 	<div class="title nbl black ta-c">Как мы работаем</div>
+ 			 	<div class="kak">
+ 			 		<img src="img/rab1.png" alt="">
+ 			 		<div class="kak-title">Звонок <br> или заявка</div>
+ 			 		<div class="kak-text">Оставляете заявку на сайте или звоните нам по телефону</div>
+ 			 	</div>
+ 			 	<div class="arrow"><img src="img/arrow2.png" alt=""></div>
+ 			 	<div class="kak">
+ 			 		<img src="img/rab2.png" alt="">
+ 			 		<div class="kak-title">Согласование <br>работ/сметы</div>
+ 			 		<div class="kak-text">Согласование материалов, расчет сметы, заключение договора</div>
+ 			 	</div>
+ 			 	<div class="arrow"><img src="img/arrow2.png" alt=""></div>
+ 			 	<div class="kak">
+ 			 		<img src="img/rab3.png" alt="">
+ 			 		<div class="kak-title">Ремонт и отделка <br>помещения</div>
+ 			 		<div class="kak-text">В оговоренные сроки выполняется работа по объекту </div>
+ 			 	</div>
+ 			 	<div class="arrow"><img src="img/arrow2.png" alt=""></div>
+ 			 	<div class="kak">
+ 			 		<img src="img/rab4.png" alt="">
+ 			 		<div class="kak-title">Получение оплаты <br>за работу</div>
+ 			 		<div class="kak-text">Осмотр выполненной работы и оплата</div>
+ 			 	</div>
+ 		</div>
+ 	</div>
+ 	<div class="wrapper" id="block8"> 
+ 		<div class="container-new">
+		<div class="row maintitle">
+			 
+	 	<div id="mainform">
+		<div id="timer1">
+			<span class="sublogo nli">Специальное предложение</span>
+			<div class="bigtext nbl">Установка межкомнатных дверей</div>
+			<div class="price nli">2990 рублей за 2 двери</div>
+			<div id="timer" class="nbl black">	
+
+			<b class="nli white">До конца акции осталось:</b>				<b id="days3"></b> д <b id="hours3"></b> ч <b id="minutes3"></b> мин <b id="seconds3"></b> сек </div>
+			</div>
+		 
+		<div id="form1">
+			<div class="bigtext nbl">Оставьте заявку</div>
+			<div class="sublogo nli">на бесплатный выезд замерщика и расчет сметы</div>
+	 		
+	 	<form action="thanks.php" method="post">
+	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required="">
+	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required="">
+	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">
+	 		</form>
+	 	</div>
+		</div>
+		</div>
+
+ 	</div> 
+ 	</div> 
+ 	<div class="wrapper" id="block9"> 
+ 		<div class="container-new">
+ 			<div class="title nbl black ta-c">Кто с нами сотрудничает?</div>
+		 <div class="sotr">
+		 	<img src="img/part4.png" alt=""> 
+		 	<div class="str-text">Сухие смеси</div>
+		 </div>
+		 <div class="sotr">
+		 	<img src="img/part3.png" alt="">
+		 	<div class="str-text">Сантехника</div> 
+		 </div>
+		 <div class="sotr">
+		 	<img src="img/part2.png" alt="">
+		 	<div class="str-text">Ламинат</div> 
+		 </div>
+		 <div class="sotr">
+		 	<img src="img/part1.png" alt="">
+		 	<div class="str-text">Инструменты</div> 
+		 </div>
+
+ 	</div> 
+ 	</div> 
+ 	<div class="wrapper" id="block10"> 
+ 		<div class="container-new">
+		<div class="row maintitle">
+			 
+	 	<div id="mainform">
+		<div id="timer1">
+			<span class="sublogo nli">Специальное предложение</span>
+			<div class="bigtext nbl">Установка ламината</div>
+			<div class="price nli">от 250 руб/м2</div>
+			<div id="timer" class="nbl black">	
+
+			<b class="nli white">До конца акции осталось:</b>				<b id="days2"></b> д <b id="hours2"></b> ч <b id="minutes2"></b> мин <b id="seconds2"></b> сек </div>
+			</div>
+		 
+		<div id="form1">
+			<div class="bigtext nbl">Оставьте заявку</div>
+			<div class="sublogo nli">на бесплатный выезд замерщика и расчет сметы</div>
+	 		
+	 	<form action="thanks.php" method="post">
+	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required="">
+	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required="">
+	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">
+	 		</form>
+	 	</div>
+		</div>
+		</div>
+
+ 	</div> 
+ 	</div>
+ 	<div class="wrapper" id="block11"> 
+ 		<div class="container-new">
+ 			<div class="title nbl black ta-c">Сертификаты</div>
+	 	<div class="blag"><img src="img/polka.jpg" alt=""></div>
+
+ 	</div> 
+ 	</div> 
+ 	<div class="wrapper" id="block12"> 
+ 		<div class="container-new">
+ 			<div class="title nbl black ta-c">Отзывы наших клиентов</div>
+	  	<div class="ot-item">
+	  		<div class="ot-photo"><img src="img/uchilka.jpg" alt=""></div>
+	  		<div class="ot-title">Срочно нужно было сделать ремонт на кухне...</div>
+	  		<div class="ot-text">«Срочно нужно было сделать ремонт на кухне, после того, как залили соседи сверху. Ребят нашла в интернете. Быстро приехали и подсчитали стоимость, ремонт сделали за 2 дня, цена приятно удивила»</div>
+	  		<div class="ot-name red nbl">Ирина Кононенко, учитель начальных классов, Красноярск</div>
+	  	</div> 
+	  	<div class="ot-item">
+	  		<div class="ot-photo"><img src="img/avtos.jpg" alt=""></div>
+	  		<div class="ot-title">Решили с женой сделать летом ремонт в ванной...</div>
+	  		<div class="ot-text">«Решили с женой сделать летом ремонт в ванной, друзья посоветовали обратиться в фирму Ремонт 5+. Замерщик приехал через 2 часа примерно, расчет сметы и реальные расходы были практически одинаковы + бесплатно установили бойлер»</div>
+	  		<div class="ot-name red nbl">Виталий Сычиков, менеджер автосалона, Красноярск</div>
+	  	</div> 
+	  	<div id="lm" style="display:none;">
+	  	<div class="ot-item">
+	  		<div class="ot-photo"><img src="img/trener.jpg" alt=""></div>
+	  		<div class="ot-title">Дочке купила квартиру на свадьбу, но правда без ремонта...</div>
+	  		<div class="ot-text">«Дочке купила квартиру на свадьбу, но правда без ремонта. Нашла компанию через интернет, оставила заявку на сайте – перезвонили быстро.  Делали ремонт во всей квартиры, по сравнению с другими подрядчиками сэкономила примерно 25 тыс. рублей»  </div>
+	  		<div class="ot-name red nbl">Елена Ибрагимова, тренер по художественной гимнастике, Красноярск</div>
+	  	</div> 
+	  	<div class="ot-item">
+	  		<div class="ot-photo"><img src="img/bankir.jpg" alt=""></div>
+	  		<div class="ot-title">Нужно было поклеить обои в детской и зале, так, как я постоянно на работе...</div>
+	  		<div class="ot-text">«Нужно было поклеить обои в детской и зале, так, как я постоянно на работе, некогда этим было заниматься. Позвонила по рекомендации мамы – устанавливали сантехнику ей. Цена поклейки была абсолютно адекватной и качество работ понравились. Спасибо еще раз Сергею»  </div>
+	  		<div class="ot-name red nbl">Инна Нигматулина, работник банка, Красноярск</div>
+	  	</div> 
+	  	<div class="ot-item">
+	  		<div class="ot-photo"><img src="img/manager.jpg" alt=""></div>
+	  		<div class="ot-title">Решили с женой установить ламинат во всей квартире...</div>
+	  		<div class="ot-text">«Решили с женой установить ламинат во всей квартире, долго выбирал подрядчиков, так, как уже был горький осадок работы с некоторыми компаниями. Компанию «Ремонт5+» выбрал из-за хороших отзывов и доступных цен. Ламинат установили за 2 дня, все сделали быстро и качественно. Отдельное спасибо Сергею за рекомендации в выборе материала, помог сэкономить деньги»</div>
+	  		<div class="ot-name red nbl">Андрей Марченко, менеджер консалтинговой компании, Красноярск</div>
+	  	</div> 
+	  	<div class="ot-item">
+	  		<div class="ot-photo"><img src="img/kassir.jpg" alt=""></div>
+	  		<div class="ot-title">Нужна была быстрая и не дорогая замена старых окон...</div>
+	  		<div class="ot-text">«Нужна была быстрая и не дорогая замена старых окон на металлопластиковые. Оставила заказ на сайте, перезвонили, через час приехал замерщик, составил смету. На протяжении одного дня заменили все 3 окна. Реальная сумма расходов отличалась от сметы всего на 450 рублей. Спасибо, ребята, будем обращаться»</div>
+	  		<div class="ot-name red nbl">Наталья Вишневская, работник супермаркета «Командор», Красноярск</div>
+	  	</div> 
+	  	</div>
+	  	</div> 
+	  	<div class="container-new">
+		<div id="load-more"> <img src="img/load.jpg" alt="" id="load"> <a href="#" class="zagr nbl red">Загрузить еще отзывы</a></div>
+ 	</div> 
+ 	</div> 
+ 	<div class="wrapper" id="block13"> 
+ 		<div class="container-new">
+ 			<div class="title nbl black ta-c">Контакты</div>
+	  	 	<div class="address">Красноярск, ул. Ленина, д. 41, оф. 600</div>
+		 <div class="row maintitle">
+ 
+	 	<div id="mainform1">
+		<div id="timer2">
+			<span class="sublogo nli">Оставьте заявку </span>
+			<div class="price nli">на бесплатный</div>
+			<div class="price nli">выезд замерщика <br>и расчет сметы</div> 
+			<div id="timer3" class="nbl  black">	
+
+			<b class="nli   ">До конца акции осталось: </b><b id="days111"></b> д <b id="hours111"></b> ч <b id="minutes111"></b> мин <b id="seconds111"></b> сек </div>
+			</div>
+		 
+		<div id="form2">
+			<div class="bigtext nbl">Оставьте заявку</div>
+			<div class="sublogo nli">на бесплатный выезд замерщика и расчет сметы</div>
+	 		
+	 	<form action="thanks.php" method="post">
+	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required="">
+	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required="">
+	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">
+	 		</form>
+	 	</div>
+		</div>
+		</div>
+ 	</div> 
+ 	</div> 
+ 	<footer>
+		<div id="footer">
+			<div id="logo"><span class="nth">Ремонт</span>
+			<span class="nbl">5</span>
+			<span class="plus nbl">+</span>
+			<span class="sublogo nli">Ремонт и отделка жилых и офисных помещений</span>
+			</div> 
+			<a href="http://24komfort.ru" id="24komfort">Ремонт квартир в Красноярске</a>
+			<a href="http://artofbiz.ru" target="_blank" id="artofbiz"><img src="img/artofbiz.png" alt=""></a>
+			
+		</div>
+	</footer>
+ 	<script>
+ 	    $(document).ready(function () {
+ 		setInterval(function(){
+	    var future = new Date("feb 22 2015 21:15:00 GMT+0200");
+	    var now = new Date();
+	    var difference = Math.floor((future.getTime() - now.getTime()) / 1000);
+	    
+	    var seconds = fixIntegers(difference % 60);
+	    difference = Math.floor(difference / 60);
+	    
+	    var minutes = fixIntegers(difference % 60);
+	    difference = Math.floor(difference / 60);
+	    
+	    var hours = fixIntegers(difference % 24);
+	    difference = Math.floor(difference / 24);
+	    
+	    var days = difference;
+	    
+	    $("#seconds").text(seconds);
+	    $("#minutes").text(minutes);
+	    $("#hours").text(hours);
+	    $("#days").text(days);
+    
+	    $("#seconds1").text(seconds);
+	    $("#minutes1").text(minutes);
+	    $("#hours1").text(hours);
+	    $("#days1").text(days);  
+	    $("#seconds111").text(seconds);
+	    $("#minutes111").text(minutes);
+	    $("#hours111").text(hours);
+	    $("#days111").text(days);  
+    
+	    $("#seconds3").text(seconds);
+	    $("#minutes3").text(minutes);
+	    $("#hours3").text(hours);
+	    $("#days3").text(days);  
+    
+	    $("#seconds2").text(seconds);
+	    $("#minutes2").text(minutes);
+	    $("#hours2").text(hours);
+	    $("#days2").text(days);  
+	}, 1000);
+
+	function fixIntegers(integer)
+	{
+	    if (integer < 0)
+	        integer = 0;
+	    if (integer < 10)
+	        return "0" + integer;
+	    return "" + integer;
+	}
+	$("#load-more").click(function(){
+		$("#lm").show();
+		$("#load-more").hide();
+		return false;
+	});
+	 $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('header').addClass("miniheader");
+            } else {
+                $('header').removeClass("miniheader");
+            }
+        });
+
+
+       
+ }); 
+       
+ });
+ 
+ 	</script> 
+ 	<script>
+		$(document).ready(function(){
+	 	 
+		$(".close").click(function (){
+			$("#overlay").fadeOut(500);
+			return false;
+		}); 
+		$(".getpopup").click(function (){
+			$("#overlay").fadeIn(500);
+			return false;
+		});   
+	 	$(".getpopup").click(function(){ 
+	 		var y = '<div class="title nbl white ta-c">Оставьте заявку</div><form action="thanks.php" method="post">		<input type="hidden" value="">	 			<input class="form-control nli input-lg " type="text" name="name" placeholder="Ваше имя*" required>	 			<input class="form-control nli input-lg " type="text" name="phone" placeholder="Номер телефона*" required>	 			<input type="submit" class="btn btn-large" value="Оставьте заявку">	 		</form>';	
+				$("#newform").html(y);
+			var k = $(this).attr( "data-val");
+			var z = $(this).attr( "data-btn");
+			$("#data-val").val(k);
+			$("#data-btn").val(z);
+		});
+		});
+	</script> 
+</body>
+</html> 
