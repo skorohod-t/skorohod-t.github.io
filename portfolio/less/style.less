@@ -1,0 +1,293 @@
+/* Color Setting */
+@btn-color: #e22828;
+@text: #696969;
+@black: #000;
+@light: #fff;
+
+
+
+
+
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+html{
+  font-size: 10px;
+}
+h1{
+  font-family: 'Russo One', sans-serif;
+  font-size: 2.4rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+.header{
+  margin-top: 2rem;
+}
+.specialisation{
+  font-size: 1.8rem;
+  color: #000;
+}
+.tel{
+  text-transform: none;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600
+}
+.myphoto{
+  display: block;
+  height: 30rem;
+  margin: 0 auto;
+}
+.about-me{
+  margin-top: 7rem;
+}
+.about{
+  height: 300px;
+  .name{
+    font-size: 2.4rem;
+    color: @black;
+
+
+  }
+  ul{
+    margin-top: 1rem;
+    padding: 0;
+
+    li{
+      color: @text;
+      font-size: 1.8rem;
+    }
+  }
+  .profession{
+    display: block;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: @text;
+  }
+  .button{
+    display: block;
+    padding: 1.5rem 3rem;
+    color: @light;
+    background-color: @btn-color;
+    font-size: 1.6rem;
+    position: relative;
+    bottom: -2.3rem;
+    margin: 0 auto;
+  }
+}
+.portfolio{
+  margin-top: 2rem;
+  .row{
+
+    .col-md-12{
+
+      ul{
+          margin: 0;
+          margin-top: 3rem;
+
+          width: 100%;
+          text-align: center;
+          .active{
+            color: @btn-color;
+          }
+        li{
+          margin-bottom: 2rem;
+          display: inline-block;
+          text-align: center;
+          .active{
+            color: @btn-color;
+          }
+          margin-top: 1rem;
+          color: @text;
+          font-size: 1.8rem;
+          transition: all 0.5s;
+          cursor: pointer;
+
+          a{
+            color: @text;
+            &:hover{
+              text-decoration: none;
+              transition: all 0.2s;
+              color: @btn-color;
+            }
+          }
+          &:hover{
+            color: @btn-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.portfolio-items{
+  margin-bottom: 2rem;
+  }
+
+
+.portfolio-item{
+  width: 24.5rem;
+  height: 24.5rem;
+  background-image: url("../img/site.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: -1;
+  transition: all 1s;
+
+  .name{
+    font-size: 1.8rem;
+    color: @light;
+    display: none;
+    margin-top: 6.5rem;
+  }
+
+  .desc{
+    font-size: 1.6rem;
+    color: @light;
+    display: none;
+  }
+
+  &:hover{
+    transition: all 0.2s;
+    background-image: url("../img/site-black.png");
+    .watch{
+      transition: all 0.2s;
+      z-index: 9999999;
+      display: block;
+    }
+    .name{
+      transition: all 0.2s;
+      display: block;
+    }
+    .desc{
+      transition: all 0.2s;
+      display: block;
+    }
+}
+
+  .watch{
+    transition: all 0.2s;
+    margin: 0 auto;
+    display: none;
+    font-size: 1.8rem;
+    color: @light;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: @btn-color;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    &:hover{
+      transition: all 0.2s;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+  .categories{
+    margin-bottom: 6rem;
+  }
+
+
+.bottom{
+  height: 40rem;
+
+  .circle{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: @btn-color;
+    display: inline-block;
+
+    .arrow-down{
+      height: 3.5rem;
+      margin-top: 1.25rem;
+    }
+  }
+}
+
+.feedback-slider{
+
+  height: auto;
+  margin-top: 7rem;
+  &-item{
+    position: relative;
+    .feedback-img{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+
+    .name{
+      text-decoration: underline;
+      font-size: 2rem;
+      color: @btn-color;
+    }
+    .name-of-project, .deathline, .price{
+      font-size: 1.6rem;
+      color: @black;
+    }
+    .feedback-text{
+      color: @text;
+      font-size: 1.4rem;
+    }
+  }
+}
+.next, .prev{
+  height: 5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-2.5rem);
+  cursor: pointer;
+}
+.next{
+  right: 0;
+}
+.prev{
+  left: 0;
+  z-index: 999;
+}
+
+.social-block{
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  img{
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    background-color: ;
+  }
+  .social{
+    display: block;
+    padding-bottom: 3rem;
+    color: @btn-color;
+    font-size: 1.5rem;
+    &:hover{
+      color: @btn-color;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .name{
+        margin-top: 4rem;
+  }
+  .bottom{
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 3rem;
+  }
+  .about{
+    text-align: center;
+  }
+  .next, .prev{
+    display: none;
+  }
+  .message-form{
+    display: block;
+  }
+
+}

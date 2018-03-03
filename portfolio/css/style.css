@@ -1,0 +1,257 @@
+/* Color Setting */
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+html {
+  font-size: 10px;
+}
+h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2.4rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+.header {
+  margin-top: 2rem;
+}
+.specialisation {
+  font-size: 1.8rem;
+  color: #000;
+}
+.tel {
+  text-transform: none;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.myphoto {
+  display: block;
+  height: 30rem;
+  margin: 0 auto;
+}
+.about-me {
+  margin-top: 7rem;
+}
+.about {
+  height: 300px;
+}
+.about .name {
+  font-size: 2.4rem;
+  color: #000000;
+}
+.about ul {
+  margin-top: 1rem;
+  padding: 0;
+}
+.about ul li {
+  color: #696969;
+  font-size: 1.8rem;
+}
+.about .profession {
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #696969;
+}
+.about .button {
+  display: block;
+  padding: 1.5rem 3rem;
+  color: #ffffff;
+  background-color: #e22828;
+  font-size: 1.6rem;
+  position: relative;
+  bottom: -2.3rem;
+  margin: 0 auto;
+}
+.portfolio {
+  margin-top: 2rem;
+}
+.portfolio .row .col-md-12 ul {
+  margin: 0;
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+.portfolio .row .col-md-12 ul .active {
+  color: #e22828;
+}
+.portfolio .row .col-md-12 ul li {
+  margin-bottom: 2rem;
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #696969;
+  font-size: 1.8rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.portfolio .row .col-md-12 ul li .active {
+  color: #e22828;
+}
+.portfolio .row .col-md-12 ul li a {
+  color: #696969;
+}
+.portfolio .row .col-md-12 ul li a:hover {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: #e22828;
+}
+.portfolio .row .col-md-12 ul li:hover {
+  color: #e22828;
+}
+.portfolio-items {
+  margin-bottom: 2rem;
+}
+.portfolio-item {
+  width: 24.5rem;
+  height: 24.5rem;
+  background-image: url("../img/site.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: -1;
+  transition: all 1s;
+}
+.portfolio-item .name {
+  font-size: 1.8rem;
+  color: #ffffff;
+  display: none;
+  margin-top: 6.5rem;
+}
+.portfolio-item .desc {
+  font-size: 1.6rem;
+  color: #ffffff;
+  display: none;
+}
+.portfolio-item:hover {
+  transition: all 0.2s;
+  background-image: url("../img/site-black.png");
+}
+.portfolio-item:hover .watch {
+  transition: all 0.2s;
+  z-index: 9999999;
+  display: block;
+}
+.portfolio-item:hover .name {
+  transition: all 0.2s;
+  display: block;
+}
+.portfolio-item:hover .desc {
+  transition: all 0.2s;
+  display: block;
+}
+.portfolio-item .watch {
+  transition: all 0.2s;
+  display: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  width: 15rem;
+  border-radius: 1rem;
+  background-color: #e22828;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+.portfolio-item .watch:hover {
+  transition: all 0.2s;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.categories {
+  margin-bottom: 6rem;
+}
+.bottom {
+  height: 40rem;
+}
+.bottom .circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #e22828;
+  display: inline-block;
+}
+.bottom .circle .arrow-down {
+  height: 3.5rem;
+  margin-top: 1.25rem;
+}
+.feedback-slider {
+  height: auto;
+  margin-top: 7rem;
+}
+.feedback-slider-item {
+  position: relative;
+}
+.feedback-slider-item .feedback-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.feedback-slider-item .name {
+  text-decoration: underline;
+  font-size: 2rem;
+  color: #e22828;
+}
+.feedback-slider-item .name-of-project,
+.feedback-slider-item .deathline,
+.feedback-slider-item .price {
+  font-size: 1.6rem;
+  color: #000000;
+}
+.feedback-slider-item .feedback-text {
+  color: #696969;
+  font-size: 1.4rem;
+}
+.next,
+.prev {
+  height: 5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-2.5rem);
+  cursor: pointer;
+}
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+  z-index: 999;
+}
+.social-block {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.social-block img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  background-color: ;
+}
+.social-block .social {
+  display: block;
+  padding-bottom: 3rem;
+  color: #e22828;
+  font-size: 1.5rem;
+}
+.social-block .social:hover {
+  color: #e22828;
+}
+@media (max-width: 700px) {
+  .name {
+    margin-top: 4rem;
+  }
+  .bottom {
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 3rem;
+  }
+  .about {
+    text-align: center;
+  }
+  .next,
+  .prev {
+    display: none;
+  }
+  .message-form {
+    display: block;
+  }
+}
