@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>CAMCLICK</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});															
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<div id="logo" class="fleft">
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<li data-slide="1">Home</li>
+				<li data-slide="2">About</li>
+				<li data-slide="4">Work</li>
+				<li data-slide="6">Services</li>
+				<li data-slide="8">Meet The Team</li>
+				<li data-slide="10">Contact</li>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide1">
+		<div class="container clearfix">
+			<div class="effects">
+				<div class="container effects_1"></div>
+			</div>
+			<div id="content" class="grid_12">
+				<h1>Aliquam ornare velit</h1>
+				<h2>Cras urna leo, fringilla nec aliquam ac, varius in enim. Maecenas non felis augue, quis sagittis justo. Donec gravida, arcu in aliquet convallis</h2>
+				<a class="button" title="" data-slide="2"></a>
+				
+				<div id="top_socials">
+					<ul>
+						<li class="soc1"><a href="#"></a></li>
+						<li class="soc2"><a href="#"></a></li>
+						<li class="soc3"><a href="#"></a></li>
+						<li class="soc4"><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>About</span></h1>
+			<h2>Cras urna leo, fringilla nec aliquam ac, varius in enim. Maecenas non felis augue, quis sagittis justo. Donec gravida, arcu in aliquet convallis, purus lectus</h2>
+		</div>
+		<div id="content" class="grid_4">
+			<h4>F.A.Q.</h4>
+			<p>Aenean sagittis tortor quis nisl aliquet at rutrum nisi posuere. Ut sollicitudin congue orci sed aliquam. Lorem ipsum dolor sit amet, consectetur</p>
+			<div class="accordion">
+				<h3><span>Aliquam non lacus sit</span></h3>
+				<div class="accord_cont">
+					<p>Sed ut nulla vitae sapien sodales laoreet. Fusce venenatis metus eu augue dignissim luctus. Donec egestas lectus et velit semper sit amet rhoncus lorem iaculis.</p>
+				</div>
+				<h3><span>Quis sed nibh</span></h3>
+				<div class="accord_cont">
+					<p>Duis justo urna, volutpat pulvinar adipiscing at, tempor ut nis egetas suspendisse at nisi id nisl pharetra sagittis sed non urna. Etiam ligula odio.</p>
+				</div>                            
+				<h3><span>Integer id felis at</span></h3>
+				<div class="accord_cont">
+					<p>Etiam ligula odio, iaculis id vehicula bibendum, luctus eget velit. Praesent at augue ligula, vel feugiat elit. Nunc at turpis sit amet turpis ultrices.</p>
+				</div>
+				<h3><span>Magna ornare</span></h3>
+				<div class="accord_cont">
+					<p>Fusce venenatis metus eu augue dignissim luctus. Donec egestas lectus et velit semper sit amet rhoncus lorem iaculis. Sed ut nulla vitae sapien sodales laoreet.</p>
+				</div>
+			</div>
+		</div>
+		<div id="content" class="grid_8 omega">
+			<h4>The Way We Work</h4>
+			<img src="images/about_img1.jpg" alt="" />
+			<p>Vivamus pulvinar, purus quis auctor cursus, massa lectus porta mauris, sed varius purus nisl et augue. Curabitur gravida nisi vel arcu laoreet varius. Morbi venenatis odio sit amet leo egestas rutrum. Duis sed dui in massa posuere suscipit. Mauris lectus justo, cursus at lobortis</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide3">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Integer ut lacus nec mauris</p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>Work</span></h1>
+			<h2>Ut malesuada porttitor fringilla. Suspendisse vulputate imperdiet aliquet. Vivamus vitae lectus massa. Pellentesque elementum augue</h2>
+
+			<ul id="filter_img">
+				<li class="selected filter_all">All</li>
+				<li class="filter_wedding">wedding</li>
+				<li class="filter_kids">kids</li>
+				<li class="filter_fashion">fashion</li> 
+				<li class="filter_objects">objects</li>
+				<li class="filter_nature">nature</li>
+			</ul>
+			<div class="overflow_hidden">
+				<!-- portfolio_block -->
+				<ul class="item gallery-list">                                  
+					<li class="grid_3 item_objects">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/1.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<li class="grid_3 item_fashion">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/2.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<li class="grid_3 item_fashion">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/3.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li> 
+					<li class="grid_3 item_kids">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/4.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<li class="grid_3 item_fashion">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/5.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<li class="grid_3 item_nature">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/6.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<li class="grid_3 item_wedding">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/7.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<li class="grid_3 item_wedding">
+						<div class="hover_img">
+							<div class="img_bord"></div>
+							<img src="images/portfolio/8.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<span class="portfolio_link"><a href="#">View item</a></span>
+							<div class="portfolio_descr"><h3>Aliquam posuere</h3><p>Nullam luctus lacus in massa feugiat venenatis.</p></div>
+						</div>
+					</li>
+					<div class="clear"></div>
+				</ul>   
+				<!-- //portfolio_block -->   
+			</div>
+			
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide5">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<span>Fusce ornare semper</span><br><br><br>
+				<span>varius. Duis ac mi neque.</span>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>services</span></h1>
+			<h2>Nullam luctus lacus in massa feugiat venenatis. Morbi a lorem mauris. Nam egestas ligula dignissim justo ullamcorper viverra.</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_6">
+			<h4>Our Skills</h4>
+			<ul id="skills_block">
+				<p>Nullam nunc purus, pellentesque eu volutpat <span>60%</span></p>
+				<li><div class="percentage_60"></div></li>
+				<p>Morbi mollis nibh non dolor scelerisque <span>70%</span></p>
+				<li><div class="percentage_70"></div></li>
+				<p>Duis sodales cursus libero <span>50%</span></p>
+				<li><div class="percentage_50"></div></li>
+				<p>Vivamus non augue justo <span>65%</span></p>
+				<li><div class="percentage_65"></div></li>
+			</ul>
+		</div>
+		<div class="grid_6 omega">
+			<div class="serv_inf">
+				<img src="images/icon1.png" />
+				<a href="#">wedding / Love story</a>
+				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+				<div class="clear"></div>
+			</div>
+			<div class="serv_inf">
+				<img src="images/icon2.png" />
+				<a href="#">Portraits</a>
+				Nulla eu dolor mauris. Aliquam dignissim quam a massa mattis id sagittis ipsum
+				<div class="clear"></div>
+			</div>
+			<div class="serv_inf">
+				<img src="images/icon3.png" />
+				<a href="#">Birthdays</a>
+				Nullam cursus pellentesque fermentum. Suspendisse consequat elit malesuada metus
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide7">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<span>Praesent vitae eros urna</span>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>meet the team</span></h1>
+			<h2>Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in molestie et, sagittis id lorem. Nulla malesuada mauris id turpis</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_4 team_block">
+			<a href="#"><img src="images/team1.jpg"></a>
+			<h4>peter smith</h4>
+			<p>Photographer</p>
+			Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in molestie et, sagittis id lorem. Nulla malesuada
+			<ul class="team_soc">
+				<li><a href="#" class="soc1"></a></li>
+				<li><a href="#" class="soc2"></a></li>
+				<li><a href="#" class="soc3"></a></li>
+				<li><a href="#" class="soc4"></a></li>
+			</ul>
+		</div>
+		<div class="grid_4 team_block">
+			<a href="#"><img src="images/team2.jpg"></a>
+			<h4>Chris doe</h4>
+			<p>Photographer</p>
+			Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in molestie et, sagittis id lorem. Nulla malesuada
+			<ul class="team_soc">
+				<li><a href="#" class="soc1"></a></li>
+				<li><a href="#" class="soc2"></a></li>
+				<li><a href="#" class="soc3"></a></li>
+				<li><a href="#" class="soc4"></a></li>
+			</ul>
+		</div>
+		<div class="grid_4 team_block omega">
+			<a href="#"><img src="images/team3.jpg"></a>
+			<h4>sarah brown</h4>
+			<p>Photographer</p>
+			Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in molestie et, sagittis id lorem. Nulla malesuada
+			<ul class="team_soc">
+				<li><a href="#" class="soc1"></a></li>
+				<li><a href="#" class="soc2"></a></li>
+				<li><a href="#" class="soc3"></a></li>
+				<li><a href="#" class="soc4"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide9">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Cras metus ipsum, tempor</p>
+				<p>at adipiscing id, congue nec</p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>contact</span></h1>
+			<h2>Integer aliquet arcu sit amet sem porta facilisis. Curabitur sapien sapien, blandit in molestie et, sagittis id lorem. Nulla malesuada mauris id turpis</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_7">
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<input type="text" name="name" value="" placeholder="Name" />
+						<input type="text" name="subject" value="" placeholder="Phone" />
+						<input type="text" name="email" value="" placeholder="Email" />
+						<textarea name="message" id="message" placeholder="Message"></textarea>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Clear form" />
+						<input type="submit" class="contact_btn" value="Send" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="grid_5 contact_det_block omega">
+			<h4>contact details</h4>
+			<p>Ut tincidunt, erat eu pulvinar molestie, justo nisl pharetra erat, sit amet malesuada diam turpis cursus mauris. Donec ac tempor libero.</p>
+			<p>Proin sit amet sollicitudin ante. Donec sodales, metus non congue aliquam, neque mauris suscipit sapien, a ultrices lectus mauris vel ipsum. Cras vestibulum mauris et elit luctus sit amet</p>
+			<ul class="foot_block_intouch">
+				<li class="touch_phone"><p>(+1) 245 5462 252</p></li>
+				<li class="touch_clock"><p>Mon - Sat 9:00am - 6:00 pm</p></li>
+				<li class="touch_mail"><a href="mailto:support@lorem.com">support@lorem.com</a></li>
+				<li class="touch_site"><a href="#">www.lorem.com</a></li>
+				<li class="touch_adress"><p>3301 Lorem Ipsum, Dolor Sit Amet St</p></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	
+	</div>
+	
+	<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed"></iframe></div>
+	
+</div>
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">Camclick &copy; 2020 | <a href="#">Privacy Policy</a></div>
+		<div id="back_top"><a class="button" title="" data-slide="1">back to top</a></div>
+	</div>
+</div>
+
+
+</body>
+</html>
