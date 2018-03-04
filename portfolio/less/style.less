@@ -128,6 +128,33 @@ h1{
 
 .portfolio-items{
   margin-bottom: 2rem;
+
+  &:hover .portfolio-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%; // or inherit
+    height: 245px; // or inherit
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+
+  }
+  &:hover .watch{
+    transition: all 0.2s;
+    z-index: 9999999;
+    display: block;
+  }
+  &:hover .name{
+    transition: all 0.2s;
+    display: block;
+  }
+  &:hover .desc{
+      transition: all 0.2s;
+      display: block;
+    }
   }
 
 
@@ -138,8 +165,12 @@ h1{
   background-repeat: no-repeat;
   overflow: hidden;
   margin: 0 auto;
-  z-index: -1;
+  z-index: -2;
   transition: all 1s;
+  position: relative;
+
+
+
 
   .name{
     font-size: 1.8rem;
@@ -154,23 +185,7 @@ h1{
     display: none;
   }
 
-  &:hover{
-    transition: all 0.2s;
-    background-image: url("../img/site-black.png");
-    .watch{
-      transition: all 0.2s;
-      z-index: 9999999;
-      display: block;
-    }
-    .name{
-      transition: all 0.2s;
-      display: block;
-    }
-    .desc{
-      transition: all 0.2s;
-      display: block;
-    }
-}
+
 
   .watch{
     transition: all 0.2s;
@@ -277,6 +292,9 @@ h1{
     }
   }
 }
+
+
+
 
 @media (max-width: 700px) {
   .name{
