@@ -21,6 +21,10 @@ h1{
   margin-top: 7rem;
   text-align: center;
 }
+a{
+  text-decoration: none;
+  text-transform: none;
+}
 .header{
   margin-top: 2rem;
 }
@@ -81,6 +85,7 @@ h1{
   }
 }
 .portfolio{
+
   margin-top: 2rem;
   .row{
 
@@ -126,63 +131,54 @@ h1{
   }
 }
 
-.portfolio-items{
-  margin-bottom: 2rem;
-
-  &:hover .portfolio-item::before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    width: 100%; // or inherit
-    height: 245px; // or inherit
-    background-color: rgba(0, 0, 0, 0.5);
-
-
-
+.example-link{
+  text-decoration: none;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    text-decoration: none;
   }
-  &:hover .watch{
-    transition: all 0.2s;
-    z-index: 9999999;
-    display: block;
-  }
-  &:hover .name{
-    transition: all 0.2s;
-    display: block;
-  }
-  &:hover .desc{
-      transition: all 0.2s;
-      display: block;
-    }
-  }
-
-
+}
+.n1{
+  background: url(../img/1.png) center top no-repeat;
+}
+.n2{
+  background: url(../img/2.png) center top no-repeat;
+}
+.n3{
+  background: url(../img/3.png) center top no-repeat;
+}
 .portfolio-item{
   width: 24.5rem;
   height: 24.5rem;
-  background-image: url("../img/site.png");
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   margin: 0 auto;
   z-index: -2;
-  transition: all 1s;
+  transition: all 0.3s;
   position: relative;
 
 
 
 
   .name{
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     color: @light;
     display: none;
-    margin-top: 6.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+
   }
 
   .desc{
     font-size: 1.6rem;
     color: @light;
     display: none;
+    text-transform: none;
+
+    text-decoration: none;
   }
 
 
@@ -198,13 +194,39 @@ h1{
     background-color: @btn-color;
     margin: 0 auto;
     margin-top: 3.5rem;
-    &:hover{
-      transition: all 0.2s;
-      text-decoration: none;
-      opacity: 0.8;
-    }
   }
 }
+.portfolio-items{
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+    &:hover .portfolio-item::before {
+      content: '';
+
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      width: inherit;
+      height: inherit;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.3s;
+      }
+      &:hover .watch{
+        transition: all 0.2s;
+
+        display: block;
+        cursor: pointer;
+      }
+      &:hover .name{
+        transition: all 0.2s;
+        display: block;
+      }
+      &:hover .desc{
+        transition: all 0.2s;
+        display: block;
+      }
+  }
+
   .categories{
     margin-bottom: 6rem;
   }
