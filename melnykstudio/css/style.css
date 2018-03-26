@@ -231,9 +231,6 @@ html {
     left: 50%;
     transform: translateX(-50%);
   }
-  .logo-block {
-    margin-top: 5rem;
-  }
   .logo-block_size_s {
     margin-top: 0rem;
   }
@@ -282,9 +279,6 @@ html {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .logo-block {
-    margin-top: 5rem;
   }
   .logo-block_size_s {
     margin-top: 0;
